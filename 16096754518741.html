@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      
+    Sick Ranger3详细使用说明 - 
+    
+    </title>
+    
+
+    
+    
+    <link href="atom.xml" rel="alternate" title="" type="application/atom+xml">
+    <link rel="stylesheet" href="asset/css/style.min.css">
+    <link rel="stylesheet" href="asset/css/doc.css">
+    <script src="asset/app.js"></script>
+</head>
+  <body>
+    <section class="hero">
+      <div class="hero-head">
+          <nav class="navbar" role="navigation" aria-label="main navigation">
+              <div class="container">
+              <div class="navbar-brand">
+                
+                <a target="self" class="navbar-item " href="index.html">Home</a>
+                
+                <a target="_self" class="navbar-item " href="archives.html">Archives</a>
+                
+
+                <a role="button" id="navbarSNSRssSwitchBtn" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarSNSRssButtons">
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                </a>
+              </div>
+            
+              <div id="navbarSNSRssButtons" class="navbar-menu">
+                <div class="navbar-start">
+                  
+                </div>
+            
+                <div class="navbar-end">
+                  <div class="navbar-item">
+                    <!--buttons start-->
+                    <div class="buttons">
+                      
+                        
+                        
+                        
+                        
+                      
+                      <a href="atom.xml" target="_blank" title="RSS">
+                          <span class="icon is-large has-text-black-bis">
+                              <svg class="svg-inline--fa fa-rss fa-w-14 fa-lg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="rss" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M128.081 415.959c0 35.369-28.672 64.041-64.041 64.041S0 451.328 0 415.959s28.672-64.041 64.041-64.041 64.04 28.673 64.04 64.041zm175.66 47.25c-8.354-154.6-132.185-278.587-286.95-286.95C7.656 175.765 0 183.105 0 192.253v48.069c0 8.415 6.49 15.472 14.887 16.018 111.832 7.284 201.473 96.702 208.772 208.772.547 8.397 7.604 14.887 16.018 14.887h48.069c9.149.001 16.489-7.655 15.995-16.79zm144.249.288C439.596 229.677 251.465 40.445 16.503 32.01 7.473 31.686 0 38.981 0 48.016v48.068c0 8.625 6.835 15.645 15.453 15.999 191.179 7.839 344.627 161.316 352.465 352.465.353 8.618 7.373 15.453 15.999 15.453h48.068c9.034-.001 16.329-7.474 16.005-16.504z"></path></svg><!-- <i class="fas fa-rss fa-lg"></i> -->
+                          </span>
+                      </a>
+                    </div>
+                    <!--buttons end-->
+
+                  </div>
+                </div>
+                </div>
+              </div>
+            </nav>
+      </div>
+
+ <div class="hero-body ct-body"></div>
+      
+    </section>
+    <section class="ct-body">
+      <div class="container">
+          <div class="columns is-variable bd-klmn-columns is-4 is-centered">
+              <div class="column is-four-fifths">
+                  <div class="post-body single-content">
+                    
+                    <h1 class="title">
+                            Sick Ranger3详细使用说明   
+                      </h1>
+                     
+                    
+                      <div class="media">
+                            
+                            <div class="media-content">
+                              <div class="content">
+                                <p>
+                                 <span class="date">2021/01/03</span>
+                                  
+                                         
+                                  
+
+                                   
+                                      
+                                  <br />
+                                  <span class="tran-tags">Tags:</span>&nbsp;
+                                     
+
+                                </p>
+                              </div>
+                            </div>
+                         
+                    </div>
+                </div>
+                  <article class="markdown-body single-content">
+                    <ul>
+<li>
+<a href="#toc_0">实验设备清单</a>
+</li>
+<li>
+<a href="#toc_1">相机设置</a>
+<ul>
+<li>
+<a href="#toc_2">基本原理简介</a>
+</li>
+<li>
+<a href="#toc_3">输出图像数据</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_4">接线</a>
+</li>
+<li>
+<a href="#toc_5">网卡配置&amp;相机连接</a>
+</li>
+<li>
+<a href="#toc_6">相机参数介绍</a>
+<ul>
+<li>
+<a href="#toc_7">Device Control</a>
+</li>
+<li>
+<a href="#toc_8">Image format control</a>
+</li>
+<li>
+<a href="#toc_9">Scan3dControl</a>
+</li>
+<li>
+<a href="#toc_10">AcquisitionControl</a>
+</li>
+<li>
+<a href="#toc_11">DigitalIOControl</a>
+</li>
+<li>
+<a href="#toc_12">Timer Control</a>
+</li>
+<li>
+<a href="#toc_13">Encoder Control</a>
+</li>
+<li>
+<a href="#toc_14">其他的参数，都不用管</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_15">相机参数配置</a>
+<ul>
+<li>
+<a href="#toc_16">设置曝光值</a>
+</li>
+<li>
+<a href="#toc_17">设置DetectionThreshold</a>
+</li>
+<li>
+<a href="#toc_18">设置同时输出 Range 和 Reflectance 图像</a>
+</li>
+<li>
+<a href="#toc_19">配置编码器</a>
+</li>
+<li>
+<a href="#toc_20">保存图像</a>
+</li>
+</ul>
+</li>
+</ul>
+
+
+<h2 id="toc_0">实验设备清单</h2>
+
+<ul>
+<li>Sick深度相机</li>
+<li>电源线缆</li>
+<li>以太网线缆</li>
+<li>镜头</li>
+<li>激光器</li>
+<li>滤光片（要与激光器相匹配）</li>
+<li>供电模块：暂用 5V/24V DC开关电源</li>
+<li>带有差分信号的旋转编码器</li>
+<li>带有千兆以太网端口的Windows电脑，安装SICK ranger3studio软件</li>
+</ul>
+
+<h2 id="toc_1">相机设置</h2>
+
+<h3 id="toc_2">基本原理简介</h3>
+
+<p><img src="media/16096754518741/16104162797367.jpg" alt=""/><br/>
+@1 移动方向，@2 X 方向(宽度)，@3 Y 的负方向，@4 Z 方向(Range)，@5 剖面<br/>
+如上图的架设，相机通过采集照射在被测物体上的激光线，提取高度信息，进而生成 3D 图像。<br/>
+Ranger3 本身也是一个 2D 相机，其基本结构和一般 2D 相机别无二致。但是 Ranger3 内部集成了采集剖面生 成 3D 数据的算法，所以可以直接输出高精度的 3D 图像。</p>
+
+<h3 id="toc_3">输出图像数据</h3>
+
+<p>Ranger3 的输出数据主要分为 3 种。</p>
+
+<ol>
+<li><p>Sensor图像<br/>
+此图像和一般的 2D 相机图像一样。是直接从相机感光元件上获得的灰度图像。数据类型为 uint8_t(unsigned char)<br/>
+<img src="media/16096754518741/16104164521280.jpg" alt="" style="width:482px;"/></p></li>
+<li><p>Range图像<br/>
+此图像是由内部算法合成的 3D 图像数据。它是由若干的 Sensor 图像组合而来。uint16_t(原始数据)或者 float(标定后数据)。其中标定后数据直接反应实际的物理高度。<br/>
+<img src="media/16096754518741/16104164625298.jpg" alt="" style="width:482px;"/></p></li>
+<li><p>Reflectance 图像<br/>
+此图像是和 Range 图像配套生成的。它描述的是激光照射时的光强度。数据类型为 uint8_t(unsigned char)。<br/>
+<img src="media/16096754518741/16104177271045.jpg" alt="" style="width:482px;"/></p></li>
+</ol>
+
+<h2 id="toc_4">接线</h2>
+
+<p>相机供电：24V开关电源，有5个接线柱，分别为：零，火，地，正，负。<br/>
+相机的接线引脚如下表<br/>
+可能会用到的只有1，2，5，6，11，12和18</p>
+
+<table>
+<thead>
+<tr>
+<th>引脚</th>
+<th>信号</th>
+<th>说明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>1  浅蓝</td>
+<td>GND</td>
+<td>接地电压供给/信号</td>
+</tr>
+<tr>
+<td>2  白</td>
+<td>POWER SUPPLY</td>
+<td>电压供给24V DC</td>
+</tr>
+<tr>
+<td>3  灰</td>
+<td>-</td>
+<td>未连接</td>
+</tr>
+<tr>
+<td>4  紫</td>
+<td>-</td>
+<td>未连接</td>
+</tr>
+<tr>
+<td>5  蓝</td>
+<td>ENC IN A+</td>
+<td>编码器输入端 A+ (5 V) / 编码器输出端 A (24 V) 可配置:RS-422 TTL/ HTL  标配:RS-422 TTL</td>
+</tr>
+<tr>
+<td>6  绿</td>
+<td>ENC IN A-</td>
+<td>编码器输入端 A- / 不连接 可配置:RS-422 TTL/ HTL 标配:RS-422 TTL</td>
+</tr>
+<tr>
+<td>7  黄</td>
+<td>-</td>
+<td>保留</td>
+</tr>
+<tr>
+<td>8  蓝白</td>
+<td>-</td>
+<td>保留</td>
+</tr>
+<tr>
+<td>9  绿白</td>
+<td>-</td>
+<td>未连接</td>
+</tr>
+<tr>
+<td>10  橙白</td>
+<td>FRAME TRIGGER IN</td>
+<td>24 V 帧触发器输入端或可配置的  24 V 输入端/输出端 标配:帧触发器输入端</td>
+</tr>
+<tr>
+<td>11  棕</td>
+<td>ENC IN B+</td>
+<td>编码器输入端 B+ (5 V) / 编码器输出端 B (24 V) 可配置:RS-422 TTL/ HTL  标配:RS-422 TTL</td>
+</tr>
+<tr>
+<td>12 橙</td>
+<td>ENC IN B-</td>
+<td>编码器输入端 B- / 不连接 可配置:RS-422 TTL/ HTL 标配:RS-422 TTL</td>
+</tr>
+<tr>
+<td>13  粉</td>
+<td>LASER STROBE OUT1</td>
+<td>针对激光器或选通的 5 V 触发器输出</td>
+</tr>
+<tr>
+<td>14 浅绿</td>
+<td>LASER STROBE OUT2</td>
+<td>针对激光器或选通的 5 V 触发器输出</td>
+</tr>
+<tr>
+<td>15  棕白</td>
+<td>LINE TRIGGER IN</td>
+<td>24 V 行触发器输入端或可配置的  24 V 输入端/输出端 标配:行触发器输入端</td>
+</tr>
+<tr>
+<td>16  黑白</td>
+<td>I/O 3</td>
+<td>编码器预设输入或可配置的 24 V 输入端/输出端 标配:编码器预设</td>
+</tr>
+<tr>
+<td>17  黑</td>
+<td>I/O 4</td>
+<td>可配置的 24 V 输入/输出</td>
+</tr>
+<tr>
+<td>18</td>
+<td>屏蔽</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>编码器供电：5V开关电源，有5个接线柱，分别为：零，火，地，正，负。<br/>
+编码器的接线引脚如下表</p>
+
+<table>
+<thead>
+<tr>
+<th>引脚</th>
+<th>信号</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>1</td>
+<td>5 to 12V DC</td>
+</tr>
+<tr>
+<td>2</td>
+<td>0V（COMMON）</td>
+</tr>
+<tr>
+<td>3（屏蔽）</td>
+<td>GND</td>
+</tr>
+<tr>
+<td>4</td>
+<td>A+相</td>
+</tr>
+<tr>
+<td>5</td>
+<td>A-相</td>
+</tr>
+<tr>
+<td>6</td>
+<td>B+相</td>
+</tr>
+<tr>
+<td>7</td>
+<td>B-相</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Z+相</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Z-相</td>
+</tr>
+</tbody>
+</table>
+
+<p>根据以上分析，采用如下接线方案<br/>
+相机：</p>
+
+<ul>
+<li>1号脚接负极</li>
+<li>2号脚接正极</li>
+<li>5号脚接编码器A+相</li>
+<li>6号脚接编码器A-相</li>
+<li>11号脚接编码器B+相</li>
+<li>12号脚接编码器B-相</li>
+<li>屏蔽接地。</li>
+<li>其余悬空</li>
+</ul>
+
+<p>编码器：</p>
+
+<ul>
+<li>1号脚接正极</li>
+<li>2号脚接负极</li>
+<li>屏蔽接地</li>
+<li>4号脚接相机5号脚</li>
+<li>5号脚接相机6号脚</li>
+<li>6号脚接相机11号脚</li>
+<li>7号脚接相机12号脚</li>
+<li>8，9悬空</li>
+</ul>
+
+<h2 id="toc_5">网卡配置&amp;相机连接</h2>
+
+<ul>
+<li>receive buffer接受缓冲区大小设为2048，默认为256</li>
+<li>flow control设为disabled，默认为启用TX和RX</li>
+<li>中断裁决率设为极值，默认为适应。</li>
+</ul>
+
+<p>上诉设置不做也可以使用，只是会有警告<br/>
+给相机供电后，第二枚橙色的灯会闪烁，待其变成常亮之后，打开软件，在camera标签下选择scan选项搜索相机，找到之后点击connect连接相机<br/>
+如果多次搜索均未能找到相机，则禁用并重新启用网卡。</p>
+
+<h2 id="toc_6">相机参数介绍</h2>
+
+<h3 id="toc_7">Device Control</h3>
+
+<p>这一页主要描述相机的一些版本信息，固件信息，温度等信息，基本上没有什么需要修改的参数。<br/>
+<img src="media/16096754518741/16104346374171.jpg" alt="" style="width:780px;"/></p>
+
+<h3 id="toc_8">Image format control</h3>
+
+<p>这一页参数主要是用来控制图像格式。<br/>
+<img src="media/16096754518741/16104347192869.jpg" alt="" style="width:780px;"/><br/>
+参数解释</p>
+
+<ul>
+<li>ExposureTime_RegionSelector_Region0 <br/>
+Region0 的曝光时间。请特别注意:该值仅影响在 Ranger3Studio 上的 2D 图 (Sensor 图、激光线图)上的显示，并不会作为最终采集 3D 图像时使用的曝光时 间。(用于 UI 显示)</li>
+<li>ExposureTime_RegionSelector_Region1 <br/>
+Region1 的曝光时间。请特别注意:该值不会影响在 Ranger3Studio 上的 2D 图 (Sensor 图、激光线图)上的显示，但是会作为最终采集 3D 图像时使用的曝光时间。(用于最终采图) </li>
+<li>Width_RegionSelector_Region1 <br/>
+表示 AOI(用户划定的 Sensor 上的感兴趣区域)的 X 方向像素长度。 <br/>
+Height_RegionSelector_Region1 <br/>
+表示 AOI(用户划定的 Sensor 上的感兴趣区域)的 Y 方向像素长度。</li>
+<li>Height_RegionSelector_Scan3dExtraction1 <br/>
+表示要扫描的剖面数。这个参数决定了最终3D图像的宽度，而不是Height_RegionSelector_Region1 </li>
+<li>OffsetX_RegionSelector_Region1<br/>
+表示 AOI 在 X 方向的起始位置 </li>
+<li>OffsetY_RegionSelector_Region1 <br/>
+表示 AOI 在 Y 方向的起始位置。</li>
+<li>ComponentEnable_ComponentSelector_Reflectance_RegionSelector_Scan3dExtraction1 <br/>
+表示是否采集灰度图(激光强度图，Reflectance)</li>
+<li>PixelFormat_ComponentSelector_Range_RegionSelector_Scan3dExtraction1 <br/>
+表示输出的高度图(Range)的像素数据格式。可选Mono8、Mono12p、Mono16、Coord3D_C12p、Coord3D_C16 </li>
+</ul>
+
+<h3 id="toc_9">Scan3dControl</h3>
+
+<p>用于控制3D采集的格式<br/>
+<img src="media/16096754518741/16104355973393.jpg" alt="" style="width:780px;"/></p>
+
+<ul>
+<li>RangeAxis_Scan3dExtractionSelector_Scan3dExtraction1 <br/>
+定义显示 3D 数据时的 Z 轴方向。Standard(Z 轴朝上也可能朝下，取决于摆放和设置)、Reverse(与 Standard 相反)。该值的意义在于，用户在获得扫描结果后，可以根据需要选择是否取反 Z 轴。</li>
+<li>DetectionThreshold_Scan3dExtractionSelector_Scan3dExtraction1 <br/>
+最小反射率信号，可作为峰值位置检测。高数值将降低弱峰值的可检测性(深色 材料的反射)，而低数值提升所检测噪音峰值的风险。也就是提取激光线的二值化阈值。</li>
+</ul>
+
+<h3 id="toc_10">AcquisitionControl</h3>
+
+<p>关于相机采集模式的设定。<br/>
+<img src="media/16096754518741/16104357744682.jpg" alt="" style="width:780px;"/></p>
+
+<ul>
+<li>AcquisitionMode <br/>
+确定设备的检测模式。 SingleFrame(采集一张后停止)、Continuous(连续采集多张) </li>
+<li>AcquisitionFrameRate <br/>
+帧(这里指 2D 图像)的采集率(单位为赫兹)。当 DeviceScanType 为 “Areascan”值时有效。</li>
+<li>AcquisitionLineRate <br/>
+帧中采集行(每行指 3D 图像上的每个剖面)的速度(单位为赫兹)。当 DeviceScanType = Linescan3D，且 TriggerMode_TriggerSelector_LineStart = Off 时有效。举例来说，当 AcquisitionLineRate = x (Hz)，物体的运动速度为 v (m/s)，则 Y 的分辨率为 v/x (m/pixel)。 </li>
+<li>TriggerMode_TriggerSelector_LineStart <br/>
+指的是采集剖面的方式。当相机开始采集图像时，该参数若为 On，则使用编码器 信号来确定采集剖面的间隔;若为 Off，则使用内部时钟来确定采集剖面的间 隔。</li>
+<li>TriggerSource_TriggerSelector_LineStart <br/>
+规定应作为触发源使用的内部信号或物理输入行。所选触发器中， TriggerMode 必须设为“On”; TriggerSelector = LineStart。 Encoder(使用编码器作为触发源，推荐使用该项)</li>
+</ul>
+
+<h3 id="toc_11">DigitalIOControl</h3>
+
+<p>使用外部触发时需要配置一下触发器类型，我们用差分编码器，只需要在LineSelector中选择Encoder A Input即可，其他不用动。</p>
+
+<h3 id="toc_12">Timer Control</h3>
+
+<p>相机控制激光器开关时需要配置，不用动。</p>
+
+<h3 id="toc_13">Encoder Control</h3>
+
+<p>配置编码器<br/>
+<img src="media/16096754518741/16104362596498.jpg" alt="" style="width:780px;"/></p>
+
+<ul>
+<li>EncoderDivider <br/>
+确定需要多少个编码器增量/减量，以便生成编码器输 出脉冲信号。假设编码器的分辨率为 x mm/pulse，EncodeDevider 设置为 n 个， 则每 x * n mm 提取一个剖面，也就是 Y 的分辨率为 x * n mm/pixel。</li>
+<li>EncoderOutputMode <br/>
+选择编码器接口生成有效编码器输出信号的条件。 可选项有PositionUp、PositionDown、DirectionUp、DirectionDown、Motion ，这个是用来控制轮子向前走采集还是向后走采集，一般选DirectionDown或者DirectionUp</li>
+<li>EncoderResolution<br/>
+编码器的分辨率，多少个pr</li>
+</ul>
+
+<h3 id="toc_14">其他的参数，都不用管</h3>
+
+<h2 id="toc_15">相机参数配置</h2>
+
+<h3 id="toc_16">设置曝光值</h3>
+
+<p>调整界面显示的激光亮度 <br/>
+Parameter editor-&gt;ImageFormatControl 界面Region0，ExposureTime是评估激光亮度效果的，设定合理的曝光时间，使激光线占 5~7 个清晰像素为佳，该参数和采集激光线无关，仅作用于Ranger3Studio上的显示。 <br/>
+<img src="media/16096754518741/16104385723956.jpg" alt=""/><br/>
+调整采集图像的激光亮度 <br/>
+<img src="media/16096754518741/16104385849801.jpg" alt=""/></p>
+
+<p>RegionSelector为Region1时的ExposureTime，表示采集激光线的阈值。该参数和采集激光线有关。 </p>
+
+<ol>
+<li>在 Parameter editor 中将 RegionSelector 设为“Region0”。</li>
+<li>观察 2D 图像和激光束并调整参数 ExposureTime，直到激光束呈光亮窄条状且背景不再可见</li>
+<li>RegionSelector 设为“Region1”。</li>
+<li>将参数 ExposureTime 设为与 Region0 相同的值。<br/>
+✓ 由此，3D 采集所用的曝光时间与 2D 图像相同。</li>
+</ol>
+
+<h3 id="toc_17">设置DetectionThreshold</h3>
+
+<p>前提条件:焦距和曝光时间经过调整，确保获得最佳图像质量。</p>
+
+<ol>
+<li>关闭激光器。</li>
+<li>点击 Start，开始采集 3D 图像数据。<br/>
+✓ 由于激光器已关闭，图像中仅噪声可见。</li>
+<li>打开 Parameter editor，然后选择 Scan3dControl 类别。</li>
+<li>为 3D 图像拍摄一张快照，然后如下调整参数 DetectionThreshold:<br/>
+° 如果图像噪声过多，则调高 DetectionThreshold 的值。<br/>
+° 如果图像中无噪声，则降低 DetectionThreshold 的值。</li>
+<li>重复上一步骤，直到 DetectionThreshold 为低值且无过多的可见噪声。</li>
+<li>打开激光器。</li>
+</ol>
+
+<h3 id="toc_18">设置同时输出 Range 和 Reflectance 图像</h3>
+
+<ol>
+<li>Parameter editor 参数编辑窗口选择 Expert 模式, 鼠标点击左侧ImageFormatControl 参数</li>
+<li>点击 RegionSelector 下拉采选项选择 Scan3dExtraction1</li>
+<li>点击 ComponentSelector 下拉采选项选择 Reflectance, 并勾选 ComponentEnable 选项。</li>
+</ol>
+
+<h3 id="toc_19">配置编码器</h3>
+
+<p>打开 Parameter editor 并切换为 AcquisitionControl 类别，以调整触发器设置。<br/>
+启用行触发:</p>
+
+<ol>
+<li>将参数 TriggerSelector 设为 LineStart。</li>
+<li>将参数 TriggerMode 设为 On。</li>
+<li>设定参数 TriggerSource，如需基于编码器输入采集轮廓，请选择 Encoder。</li>
+</ol>
+
+<p>确定编码器类型<br/>
+在参数编辑器中修改下面的编码器设置时需要可视性选项 Expert。</p>
+
+<ol>
+<li>打开参数编辑器。</li>
+<li>点击类别 Digital IO Control。</li>
+<li>将 Line Selector 设置为 EncoderAInput。</li>
+</ol>
+
+<p>确定编码器模式</p>
+
+<ol>
+<li>打开参数编辑器。</li>
+<li>点击类别 Encoder Control。</li>
+<li>EncoderResolution配置编码器分辨率</li>
+<li>EncoderDivider表示编码器多少个脉冲触发一个剖面</li>
+<li>EncoderOutputMode选择Direction up或者Direction down，分别代表前进采集或后退采集。</li>
+</ol>
+
+<h3 id="toc_20">保存图像</h3>
+
+<p>在Data collection页面中，选择file，指定一个文件保存路径，这个路径不能包含中文。<br/>
+然后点击record，之后，相机采集到的图像就会自动保存到这个文件夹中。</p>
+
+                  </article>
+                  <div class="comments-wrap">
+                    <div class="share-comments">
+                      
+
+                      
+
+                      
+                    </div>
+                  </div><!-- end comments wrap -->
+              </div>
+            </div><!-- end columns -->
+      </div><!-- end container -->
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+              Copyright &copy; 2019
+              Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a>,&nbsp; 
+              Theme used <a target="_blank" href="https://bulma.io/">Bulma CSS</a>.
+          </p>
+        </div>
+      </footer>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+
+
+
+
+  </body>
+</html>
